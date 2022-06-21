@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[刀具儲位表]
+(
+	[儲位編號] VARCHAR(255) NOT NULL PRIMARY KEY, 
+    [X位置] SMALLINT NULL, 
+    [Y位置] SMALLINT NULL 
+)
