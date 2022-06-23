@@ -111,12 +111,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="CutterWarehouse.mdf">
+    <Content Include="ToolDepot.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="CutterWarehouse_log.ldf">
+    <Content Include="ToolDepot_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>CutterWarehouse.mdf</DependentUpon>
+      <DependentUpon>ToolDepot.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>
