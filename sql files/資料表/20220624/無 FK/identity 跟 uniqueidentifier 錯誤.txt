@@ -1,0 +1,1 @@
+uniqueidentifier 跟 identity 無法共存
