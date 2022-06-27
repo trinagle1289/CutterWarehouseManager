@@ -38,7 +38,6 @@ namespace CutterWarehouseManager
             this.ClientSize = new System.Drawing.Size(348, 344);
             this.Name = "InsertDBForm";
             this.Text = "InsertDBForm";
-            this.Load += new System.EventHandler(this.InsertDBForm_Load);
             this.ResumeLayout(false);
 
         }

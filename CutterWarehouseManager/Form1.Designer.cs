@@ -140,7 +140,6 @@ namespace CutterWarehouseManager
             this.button4.TabIndex = 3;
             this.button4.Text = "新增項目";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -192,7 +191,6 @@ namespace CutterWarehouseManager
             this.Name = "Form1";
             this.ShowIcon = false;
             this.Text = "CNC刀具倉儲管理系統";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
