@@ -40,7 +40,7 @@ namespace CutterWarehouseManager
             this.ucMenu1.ChildrenItemStyles = null;
             this.ucMenu1.ChildrenItemType = typeof(HZH_Controls.Controls.UCMenuChildrenItem);
             this.ucMenu1.DataSource = null;
-            this.ucMenu1.IsShowFirstItem = false;
+            this.ucMenu1.IsShowFirstItem = true;
             this.ucMenu1.Location = new System.Drawing.Point(12, 12);
             this.ucMenu1.MenuStyle = HZH_Controls.Controls.MenuStyle.Fill;
             this.ucMenu1.Name = "ucMenu1";
