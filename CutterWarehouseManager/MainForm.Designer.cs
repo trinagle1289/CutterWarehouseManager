@@ -30,24 +30,24 @@ namespace CutterWarehouseManager
         private void InitializeComponent()
         {
             this.TitlePanel = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.TitleLabel = new System.Windows.Forms.Label();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.DBNamePanel = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.TableNamePanel = new System.Windows.Forms.Panel();
+            this.TableNameLabel = new System.Windows.Forms.Label();
             this.DBFunPanel = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.InsertButton = new System.Windows.Forms.Button();
+            this.ModifyButton = new System.Windows.Forms.Button();
+            this.DeleteButton = new System.Windows.Forms.Button();
+            this.SearchButton = new System.Windows.Forms.Button();
+            this.DBListViewer = new System.Windows.Forms.DataGridView();
             this.MainPanel = new System.Windows.Forms.Panel();
             this.DBMenu = new HZH_Controls.Controls.UCMenu();
-            this.DBListViewer = new System.Windows.Forms.DataGridView();
             this.TitlePanel.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
-            this.DBNamePanel.SuspendLayout();
+            this.TableNamePanel.SuspendLayout();
             this.DBFunPanel.SuspendLayout();
-            this.MainPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DBListViewer)).BeginInit();
+            this.MainPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // TitlePanel
@@ -55,28 +55,28 @@ namespace CutterWarehouseManager
             this.TitlePanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TitlePanel.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.TitlePanel.Controls.Add(this.label1);
+            this.TitlePanel.Controls.Add(this.TitleLabel);
             this.TitlePanel.Location = new System.Drawing.Point(9, 9);
             this.TitlePanel.Margin = new System.Windows.Forms.Padding(0);
             this.TitlePanel.Name = "TitlePanel";
             this.TitlePanel.Size = new System.Drawing.Size(782, 68);
             this.TitlePanel.TabIndex = 0;
             // 
-            // label1
+            // TitleLabel
             // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label1.Font = new System.Drawing.Font("微軟正黑體", 15F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(217, 68);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "CNC刀具倉儲管理系統";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.TitleLabel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.TitleLabel.Font = new System.Drawing.Font("微軟正黑體", 15F, System.Drawing.FontStyle.Bold);
+            this.TitleLabel.Location = new System.Drawing.Point(0, 0);
+            this.TitleLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.TitleLabel.Name = "TitleLabel";
+            this.TitleLabel.Size = new System.Drawing.Size(217, 68);
+            this.TitleLabel.TabIndex = 0;
+            this.TitleLabel.Text = "CNC刀具倉儲管理系統";
+            this.TitleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // flowLayoutPanel2
             // 
-            this.flowLayoutPanel2.Controls.Add(this.DBNamePanel);
+            this.flowLayoutPanel2.Controls.Add(this.TableNamePanel);
             this.flowLayoutPanel2.Controls.Add(this.DBFunPanel);
             this.flowLayoutPanel2.Controls.Add(this.DBListViewer);
             this.flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
@@ -86,35 +86,35 @@ namespace CutterWarehouseManager
             this.flowLayoutPanel2.Size = new System.Drawing.Size(611, 463);
             this.flowLayoutPanel2.TabIndex = 2;
             // 
-            // DBNamePanel
+            // TableNamePanel
             // 
-            this.DBNamePanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DBNamePanel.Controls.Add(this.label2);
-            this.DBNamePanel.Location = new System.Drawing.Point(0, 5);
-            this.DBNamePanel.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            this.DBNamePanel.Name = "DBNamePanel";
-            this.DBNamePanel.Padding = new System.Windows.Forms.Padding(3);
-            this.DBNamePanel.Size = new System.Drawing.Size(611, 43);
-            this.DBNamePanel.TabIndex = 1;
+            this.TableNamePanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TableNamePanel.Controls.Add(this.TableNameLabel);
+            this.TableNamePanel.Location = new System.Drawing.Point(0, 5);
+            this.TableNamePanel.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            this.TableNamePanel.Name = "TableNamePanel";
+            this.TableNamePanel.Padding = new System.Windows.Forms.Padding(3);
+            this.TableNamePanel.Size = new System.Drawing.Size(611, 43);
+            this.TableNamePanel.TabIndex = 1;
             // 
-            // label2
+            // TableNameLabel
             // 
-            this.label2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label2.Location = new System.Drawing.Point(3, 3);
-            this.label2.Margin = new System.Windows.Forms.Padding(0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(129, 35);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "資料庫名稱:";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.TableNameLabel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.TableNameLabel.Location = new System.Drawing.Point(3, 3);
+            this.TableNameLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.TableNameLabel.Name = "TableNameLabel";
+            this.TableNameLabel.Size = new System.Drawing.Size(129, 35);
+            this.TableNameLabel.TabIndex = 0;
+            this.TableNameLabel.Text = "資料庫名稱:";
+            this.TableNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // DBFunPanel
             // 
             this.DBFunPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DBFunPanel.Controls.Add(this.button4);
-            this.DBFunPanel.Controls.Add(this.button3);
-            this.DBFunPanel.Controls.Add(this.button2);
-            this.DBFunPanel.Controls.Add(this.button1);
+            this.DBFunPanel.Controls.Add(this.InsertButton);
+            this.DBFunPanel.Controls.Add(this.ModifyButton);
+            this.DBFunPanel.Controls.Add(this.DeleteButton);
+            this.DBFunPanel.Controls.Add(this.SearchButton);
             this.DBFunPanel.Location = new System.Drawing.Point(0, 58);
             this.DBFunPanel.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
             this.DBFunPanel.Name = "DBFunPanel";
@@ -122,54 +122,63 @@ namespace CutterWarehouseManager
             this.DBFunPanel.Size = new System.Drawing.Size(611, 48);
             this.DBFunPanel.TabIndex = 2;
             // 
-            // button4
+            // InsertButton
             // 
-            this.button4.AutoSize = true;
-            this.button4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button4.Location = new System.Drawing.Point(298, 5);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(102, 36);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "新增項目";
-            this.button4.UseVisualStyleBackColor = true;
+            this.InsertButton.AutoSize = true;
+            this.InsertButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.InsertButton.Dock = System.Windows.Forms.DockStyle.Right;
+            this.InsertButton.Location = new System.Drawing.Point(298, 5);
+            this.InsertButton.Name = "InsertButton";
+            this.InsertButton.Size = new System.Drawing.Size(102, 36);
+            this.InsertButton.TabIndex = 3;
+            this.InsertButton.Text = "新增項目";
+            this.InsertButton.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // ModifyButton
             // 
-            this.button3.AutoSize = true;
-            this.button3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button3.Location = new System.Drawing.Point(400, 5);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(102, 36);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "修改項目";
-            this.button3.UseVisualStyleBackColor = true;
+            this.ModifyButton.AutoSize = true;
+            this.ModifyButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ModifyButton.Dock = System.Windows.Forms.DockStyle.Right;
+            this.ModifyButton.Location = new System.Drawing.Point(400, 5);
+            this.ModifyButton.Name = "ModifyButton";
+            this.ModifyButton.Size = new System.Drawing.Size(102, 36);
+            this.ModifyButton.TabIndex = 2;
+            this.ModifyButton.Text = "修改項目";
+            this.ModifyButton.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // DeleteButton
             // 
-            this.button2.AutoSize = true;
-            this.button2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button2.Location = new System.Drawing.Point(502, 5);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(102, 36);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "刪除項目";
-            this.button2.UseVisualStyleBackColor = true;
+            this.DeleteButton.AutoSize = true;
+            this.DeleteButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.DeleteButton.Dock = System.Windows.Forms.DockStyle.Right;
+            this.DeleteButton.Location = new System.Drawing.Point(502, 5);
+            this.DeleteButton.Name = "DeleteButton";
+            this.DeleteButton.Size = new System.Drawing.Size(102, 36);
+            this.DeleteButton.TabIndex = 1;
+            this.DeleteButton.Text = "刪除項目";
+            this.DeleteButton.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // SearchButton
             // 
-            this.button1.AutoSize = true;
-            this.button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button1.Location = new System.Drawing.Point(5, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(62, 36);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "查詢";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.SearchButton.AutoSize = true;
+            this.SearchButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.SearchButton.Dock = System.Windows.Forms.DockStyle.Left;
+            this.SearchButton.Location = new System.Drawing.Point(5, 5);
+            this.SearchButton.Name = "SearchButton";
+            this.SearchButton.Size = new System.Drawing.Size(62, 36);
+            this.SearchButton.TabIndex = 0;
+            this.SearchButton.Text = "查詢";
+            this.SearchButton.UseVisualStyleBackColor = true;
+            this.SearchButton.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // DBListViewer
+            // 
+            this.DBListViewer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DBListViewer.Location = new System.Drawing.Point(3, 114);
+            this.DBListViewer.Name = "DBListViewer";
+            this.DBListViewer.RowTemplate.Height = 24;
+            this.DBListViewer.Size = new System.Drawing.Size(608, 333);
+            this.DBListViewer.TabIndex = 3;
             // 
             // MainPanel
             // 
@@ -202,15 +211,6 @@ namespace CutterWarehouseManager
             this.DBMenu.SelectedItem += new System.EventHandler(this.DBMenu_SelectedItem);
             this.DBMenu.Load += new System.EventHandler(this.DBMenu_Load);
             // 
-            // DBListViewer
-            // 
-            this.DBListViewer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DBListViewer.Location = new System.Drawing.Point(3, 114);
-            this.DBListViewer.Name = "DBListViewer";
-            this.DBListViewer.RowTemplate.Height = 24;
-            this.DBListViewer.Size = new System.Drawing.Size(608, 333);
-            this.DBListViewer.TabIndex = 3;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -225,11 +225,11 @@ namespace CutterWarehouseManager
             this.Text = "CNC刀具倉儲管理系統";
             this.TitlePanel.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
-            this.DBNamePanel.ResumeLayout(false);
+            this.TableNamePanel.ResumeLayout(false);
             this.DBFunPanel.ResumeLayout(false);
             this.DBFunPanel.PerformLayout();
-            this.MainPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DBListViewer)).EndInit();
+            this.MainPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -237,15 +237,15 @@ namespace CutterWarehouseManager
         #endregion
 
         private System.Windows.Forms.Panel TitlePanel;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label TitleLabel;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        private System.Windows.Forms.Panel DBNamePanel;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel TableNamePanel;
+        private System.Windows.Forms.Label TableNameLabel;
         private System.Windows.Forms.Panel DBFunPanel;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button SearchButton;
+        private System.Windows.Forms.Button InsertButton;
+        private System.Windows.Forms.Button ModifyButton;
+        private System.Windows.Forms.Button DeleteButton;
         private System.Windows.Forms.Panel MainPanel;
         private HZH_Controls.Controls.UCMenu DBMenu;
         private System.Windows.Forms.DataGridView DBListViewer;
