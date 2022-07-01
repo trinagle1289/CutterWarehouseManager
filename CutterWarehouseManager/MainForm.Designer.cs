@@ -40,8 +40,8 @@ namespace CutterWarehouseManager
             this.SearchButton = new System.Windows.Forms.Button();
             this.DBListViewer = new System.Windows.Forms.DataGridView();
             this.MainPanel = new System.Windows.Forms.Panel();
-            this.DBMenu = new HZH_Controls.Controls.UCMenu();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.DBMenu = new HZH_Controls.Controls.UCMenu();
             this.TitlePanel.SuspendLayout();
             this.TableNamePanel.SuspendLayout();
             this.DBFunPanel.SuspendLayout();
@@ -185,6 +185,19 @@ namespace CutterWarehouseManager
             this.MainPanel.Size = new System.Drawing.Size(784, 561);
             this.MainPanel.TabIndex = 4;
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.TableNamePanel);
+            this.panel1.Controls.Add(this.DBFunPanel);
+            this.panel1.Controls.Add(this.DBListViewer);
+            this.panel1.Location = new System.Drawing.Point(178, 86);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(596, 463);
+            this.panel1.TabIndex = 4;
+            // 
             // DBMenu
             // 
             this.DBMenu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -205,19 +218,6 @@ namespace CutterWarehouseManager
             this.DBMenu.TabIndex = 3;
             this.DBMenu.SelectedItem += new System.EventHandler(this.DBMenu_SelectedItem);
             this.DBMenu.Load += new System.EventHandler(this.DBMenu_Load);
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.Controls.Add(this.TableNamePanel);
-            this.panel1.Controls.Add(this.DBFunPanel);
-            this.panel1.Controls.Add(this.DBListViewer);
-            this.panel1.Location = new System.Drawing.Point(178, 86);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(596, 463);
-            this.panel1.TabIndex = 4;
             // 
             // MainForm
             // 
